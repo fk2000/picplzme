@@ -1,0 +1,147 @@
+/*DEMO PAGE STYLES*/
+
+body { font:17px/1.49 sans-serif; *font-size:small; } 
+body {
+    background: #000;
+    background: rgba(0,0,0,0.6);
+    color: #333;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+pre, code, kbd, samp {font-size:13px; font-family: monospace, sans-serif; }
+#content {
+    width: 600px;
+    margin: 20px auto;
+    background: #f0f0f0;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0px 0px 4px #ccc;
+    -webkit-box-shadow: 0px 0px 4px #ccc;
+    box-shadow: 0px 0px 4px #ccc;
+    padding: 20px;
+}
+#contact {
+    text-align: center;
+    border-top: 1px dotted #666;
+    padding-top: 20px;
+}
+h1,h3 {
+    text-align: center;
+    color: #555;
+   text-shadow: 0px -1px 0px #333;
+}
+h1 {
+    font-size: 38px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 26px;
+    font-weight: lighter;
+    letter-spacing: 0px;
+    font-style: oblique;
+    border-bottom: 1px dotted #666;
+}
+h1:hover,h3:hover{color:#f0f0f0;}
+a {
+    border: none;
+    text-decoration: none;
+    color: #036;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    border: none;
+}
+.clearfix:before,.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+
+
+/*PLUGIN STYLING*/
+.icon {
+float: left;
+border: 2px solid #333;
+}
+.username {
+font-size: 32px;
+float: right;
+text-shadow: 0px -1px 0px #fff;
+}
+
+    .picplz {
+position: relative;
+width: 100px;
+height: 100px;
+margin: 10px 10px 10px 0;
+float: left;
+}
+
+    .picplz a {
+text-decoration: none;
+}
+    .picInfo {
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+width: 60px;
+height: 70px;
+padding: 15px 20px;
+background: rgba(0,0,0,.7);
+}
+    .picInfo p {
+padding-left: 22px;
+width: 14px;
+height: 14px;
+margin: 5px;
+font-size: 20px;
+color: #fff;
+background-image: url(../images/icons.png);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+}
+    p.view {
+background-position: 0px -2px;
+}
+    p.like {
+background-position: 0px -14px;
+}
+    p.comment {
+background-position: 0px -28px;
+}
+    #image_list {
+width: 400px;
+background: #f0f0f0;
+margin: 20px auto;
+-moz-box-shadow: 0px 0px 4px #ffffff;
+-webkit-box-shadow: 0px 0px 4px #ffffff;
+box-shadow: 0px 0px 4px #ffffff;
+}
+#userdata {
+position: relative;
+width: 400px;
+margin: 40px auto 20px auto;
+padding: 20px;
+background: #f0f0f0;
+-moz-box-shadow: 0px 0px 4px #ffffff;
+-webkit-box-shadow: 0px 0px 4px #ffffff;
+box-shadow: 0px 0px 4px #ffffff;
+}
+#picplz {
+position: absolute;
+top: 20px;
+right: 20px;
+}
+

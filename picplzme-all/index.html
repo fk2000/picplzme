@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+  <head>
+    <title>My picplz Feed</title>
+    <link rel="stylesheet" href="css/picplzme.css" />
+    <link rel="stylesheet" href="css/slimbox2.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="js/jquery.picplzme.js"></script>
+    <script src="js/slimbox2.js"></script>
+
+
+<script>
+    $(function() {
+        $('#image_list').picplzme();
+    });
+</script>
+  </head>
+  <body>
+          <a href="http://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets2.github.com/img/4c7dc970b89fd04b81c8e221ba88ff99a06c6b61?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_white_ffffff.png&path=" alt="Fork me on GitHub"></a>
+      
+      <h1>PicPlzMe!</h1>
+      <h3>a simple plugin to show your <a href="http://picplz.com/" title="picplz mobile photo sharing for iPhone and Android">picplz</a> images anywhere in a pretty lightbox yay!</h3>
+      
+      <ul id="image_list" class="clearfix"></ul>
+    
+    
+    <div id="content">
+        
+        <h3>How Does It Work</h3>
+        <p>Simple!</p>
+        <p>This is my first plugin for the brand new API from picplz, so for now, there are only a few options.</p>
+        <ul>
+            <li>UserName (obviously)</li>
+            <li>Info animation (slide of hover)</li>
+            <li>Lightbox</li>
+            <li>Show Your Info</li>
+            <li>Show Image Data</li>
+            <li>Image Border Color</li>
+        </ul>
+        
+        <p>The only required parameter is your username. It will default to mine :)</p>
+        <p>The animation is how the info is display for the image on hover, either a slide or a fade.</p>
+        <p>You can have the images open in a lightbox, powered by the awesome Slimbox2, or have them link to picplx itself.</p>
+        <p>Set an option to have your username, avatar and follower count shown</p>
+        <p>Show the likes, comments and views count for the images</p>
+        <p>Finally, set a color for the border of the image. A lame little add on takes either a hex or a string color.</p>
+        
+        <h3>Make it go!</h3>
+        <p>So to set it up simply include the jQuery library, followed by the plugin and the plugin code for slimbox2. You can, of course, combine and minify these for production, I am leaving the parts separate just for showing you how purposes.</p>
+        <pre>
+&lt;link rel="stylesheet" href="css/picplzme.css" />
+&lt;link rel="stylesheet" href="css/slimbox2.css" />
+
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+&lt;script src="js/jquery.picplzme.js"></script>
+&lt;script src="js/slimbox2.js"></script>
+        </pre>
+        <p>I also included the CSS sheets here, which you would most likely combine and minify, but you get the idea.</p>
+        <p>Once the files are included, all you need to go is this;</p>
+        <pre>
+            $(function() {
+                $('#image_list').picplzme({
+                    username: 'thatryan'
+                });
+            });
+        </pre>
+        <p>Obviously, replace username with your own! This latches onto a ul in the markup with an id of <em>image_list</em> and calls the plugin. Like this,</p>
+        <pre>
+            &lt;ul id="image_list"></ul>
+        </pre>
+        <h3>Options</h3>
+        <p>Just a few options here,</p>
+        <DL>
+        <DT><STRONG>username</STRONG>
+        <DD>This is a string value, your picplz username
+        <DT><STRONG>animate</STRONG>
+        <DD>A string value, either hover or slide. Controls animation for image info
+        <DT><STRONG>lightbox</STRONG>
+        <DD>Boolean, true of false, if you want the image to pop up in lightbox
+            <DT><STRONG>userData</STRONG>
+            <DD>Boolean, true of false, if you want to show your avatar and followers
+                <DT><STRONG>imageData</STRONG>
+                <DD>Boolean, true of false, if you want to show the view,comment and like count
+                    <DT><STRONG>color</STRONG>
+                    <DD>string value, color name or hex value for a border around images
+        </DL>
+        
+        
+        <div id="contact">
+            <p><a href="http://twitter.com/#!/ryanolson" title="">@ryanolson</a> built this. Visit him on his site yo! <a href="http://thatryan.com/" title="thatryan | Ryan Olson Builds Stuff For The Internet">thatryan.com</a></p>
+        </div>
+    </div>
+  </body>
+</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
